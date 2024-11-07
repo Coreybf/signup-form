@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Form</title>
+    <link rel="stylesheet" href="Create-Account-Form.css">
+</head>
+<body>
+    <div class="form-container">
+            <div class="form-header">
+                <h1>Create Account</h1>
+                <p>Fill in the details to get started</p>
+            </div>
+            <form id="signupForm">
+                <div class="form-group">
+                    <!-- full name -->
+                    <label class="required" for="fullName">Full Name*</label>
+                    <br>
+                    <input class="full" type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <!-- Email  -->
+                    <label class="required" for="email">Email Address*</label>
+                    <br>
+                    <input class="full" type="text" id="email" name="email" required placeholder="you@example.com">
+                    <br>
+                </div>
+                    <!-- password -->
+                <div class="form-group">
+                    <label class="required" for="password">Password*</label>
+                    <br>
+                    <input class="full" type="text" id="password" name="password" min="8" required>
+                    <p>Must be at least 8 characters long</p>
+                </div>
+                <div class="form-group">
+                    <label class="required" for="dropdown">Roles</label>
+                        <br>
+                            <select class="full" name="roles">
+                                <br>
+                                    <option value="Select">Select a Role</option>
+                                    <option value="astronaut">Astronaut</option>
+                                    <option value="plumber">Plumber</option>
+                                    <option value="mcDonalds Worker">McDonalds Worker</option>
+                                    <option value="fry's Associate">Fry's Associate</option>
+                            </select>
+                            <br>
+                </div>
+                <div class="form-group">
+                    <label class="required" for="bio">Bio</label>
+                    <br>
+                    <textarea name="bio" id="bio" cols="50" rows="5" placeholder="Tell us about yourself!"></textarea>
+                    <p>Keep it short and sweet</p>
+                </div>
+                    
+                <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" value="terms">
+                        <label id="terms">I agree to the terms and conditions*</label>
+                </div>
+                <div class="form-group">
+                    <br>
+                    <button>Create An Account</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
