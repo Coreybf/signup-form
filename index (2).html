@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel Club</title>
+    <link rel="stylesheet" href="Adventure-Travel-Club.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header  -->
+        <div class="header"><h1>Adventure Travel Club</h1><p>Begin Your Journey Here!</p></div>
+        <form>
+            <div class="section personal-info">
+                <h2>Personal Information</h2>
+                
+                <div class="flex">
+                <div class="form-group">
+                <label for="Fname">First Name</label>
+                <br>
+                <input class="full" type="text" id="Fname" name="Fname" required>
+                <br>
+                </div>
+                
+                <div class="form-group">
+                <label for="Lname">Last Name</label>
+                <br>
+                <input class="full" type="text" id="Lname" name="Lname" required>
+                <br>
+                </div>
+                </div>
+                
+                <div class="form-group">
+                <label for="email">Email</label>
+                <br>
+                <input class="full" type="email" id="email" name="email" required>
+                <br>
+                </div>
+                
+                <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <br>
+                <input class="full" type="date" id="date" name="date" required>
+                <br>
+                </div>
+            </div>
+            <div class="section adventure-prefences">
+                <h2>Adventure Preferences</h2>
+                <div class="form-group">
+                    <label for="dropdown">Experience Level</label>
+                        <br>
+                            <select class="full" name="roles" required>
+                                <br>
+                                    <option value="Select">Select your Experience Level</option>
+                                    <option value="astronaut">Astronaut</option>
+                                    <option value="plumber">Plumber</option>
+                                    <option value="mcDonalds Worker">McDonalds Worker</option>
+                                    <option value="fry's Associate">Fry's Associate</option>
+                            </select>
+                            <br>
+                </div>
+
+                <div class="form-group">
+                    
+                    <label id="activities">Prefered Activites</label>
+                    <br>
+                    <label id="activities">Hiking</label>
+                    <input type="checkbox" id="activities" name="activities" value="Hiking" required>
+                    <br>
+                    <label>Rock Climbing</label>
+                            
+                    <input type="checkbox" id="activites" name="activites" value="Rock-Climbing" required>
+                    <br>
+                    <label id="activities">Kayaking</label>
+                    <input type="checkbox" id="activities" name="activities" value="Kayaking" required>
+                    <br>
+                    <label>Scuba Dive</label>
+                            
+                    <input type="checkbox" id="activites" name="activites" value="Scuba-dive" required>
+                    <br>
+                </div>
+                <!-- radio -->
+                <div class="form-group">
+                    <br>
+                    <label for="duration">Prefered Trip Duration</label>
+                  <br>
+                  <input type="radio" id="duration" name="duration" value="yes" required>Weekend Trips(2-3 Days)
+                  <br>
+                  <input type="radio" id="duration" name="duration" value="no" required>Week-Long Trips(5-7 Days)
+                   <br>
+                  <input type="radio" id="duration" name="duration" value="yes" required>Extended Expeditions(2+ Weeks)
+                    <br>
+                </div>
+                
+            </div>
+            <div class="section Additional Information">
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label for="range">Fitness Level(1-10)</label>
+                    <br>
+                    <input class="full" id="range" type="range" min="$1" max="$10" required>
+                    <br>
+                </div>
+                
+
+                <div class="form-group">
+                    <label class="required" for="bio">Tell us about yourself!</label>
+                    <br>
+                    <textarea name="bio" id="bio" cols="40" rows="5" placeholder="Share your adventure experiences and what excites you about joining our club..."></textarea>
+                    <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="picture">Profile Photo</label>
+                    <br>
+                    <input class="pic" type="file" id="picture" accept="image/*" required>
+                    <br>
+                </div>
+
+            </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" value="terms" required>
+                    <label id="terms">I agree to the terms and conditions*</label>
+                </div>
+
+                <div class="form-group">
+                    <br>
+                    <button>Create An Account</button>
+                </div>
+            
+            
+            
+            
+            
+        
+        
+        
+        
+        </form>
+
+    </div>
+</body>
+</html>
